@@ -1,0 +1,28 @@
+<h3>Register User </h3>
+<div class="fields-container">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input type="text" matInput  [(ngModel)]="model.name" placeholder="Enter name"/><br>
+  </mat-form-field>
+  <mat-form-field>
+  <mat-label>Address1</mat-label>
+  <input type="text" matInput  [(ngModel)]="model.address1" placeholder="Enter address1"/><br>
+</mat-form-field>
+<mat-form-field>
+<mat-label>Address2</mat-label>
+<input type="text" matInput [(ngModel)]="model.address2" placeholder="Enter address2"/><br>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>City</mat-label>
+  <input type="text" matInput  [(ngModel)]="model.city" placeholder="Enter city"/><br>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>User Name</mat-label>
+    <input type="text" matInput [(ngModel)]="model.username" placeholder="Enter username"/><br>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput [(ngModel)]="model.password" placeholder="Enter password"/><br>
+      </mat-form-field>
+</div>
+<button (click)="saveUser(model)">Register</button>

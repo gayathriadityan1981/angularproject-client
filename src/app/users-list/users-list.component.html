@@ -1,0 +1,30 @@
+
+<div class="table-responsive">
+    
+  <table  mdbTable striped="true">
+    <thead class="black white-text">
+      <tr>
+          <th  class="th-lg">Id</th>
+        <th  class="th-lg">Name</th>
+        <th  class="th-lg">Address1</th>
+        <th  class="th-lg">Address 2</th>
+        <th  class="th-lg">City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let arr of emp">
+
+            <td >{{arr.id}}</td>
+            <td>{{arr.name}}</td>
+            <td>{{arr.address1}}</td>
+            <td>{{arr.address2}}</td>
+            <td>{{arr.city}}</td>
+            <td><a  routerLinkActive="active" [routerLink]="['/userProfile', arr.id]" >View Profile</a>
+            </td>
+            <td><button (click)="deleteUser(arr.id)">Delete User</button></td>
+      </tr>
+   </tbody>
+  </table> 
+  {{emp.id}}
+  </div>
+  
